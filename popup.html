@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://img.icons8.com/fluent/100/000000/book.png" type="image/icon type">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<body>
+ <button id="colorsubmit" style="position:absolute;margin-top:540px;margin-left:200px; transform: scale(0.7,0.7); font-family: 'Roboto', sans-serif;font-size:20px;"class="btn-grad">Change Color</button>
+  <button id="colorsubmit2" style="position:absolute;margin-top:775px;margin-left:200px; transform: scale(0.7,0.7); font-family: 'Roboto', sans-serif;font-size:20px;"class="btn-grad">Change Color</button>
+
+    <button id="spacingsubmit" style="position:absolute;margin-top:985px;margin-left:200px; transform: scale(0.7,0.7); font-family: 'Roboto', sans-serif;font-size:20px;"class="btn-grad">Change Spacing</button>
+<input style="margin-left:1000px;" type="button" id="toggle_button2" value="Disable" />
+	
+<input style="margin-left:1000px;"type="button" id="toggle_button" value="Disable" />
+	
+</body>
+
+
+<div class="filler2">
+
+<p style="font-size:17px;font-family: 'Roboto', sans-serif; position:absolute;margin-top:285px; margin-left:15px;">Enable or disable image blocker</p>
+
+</div>
+</html>
+<div class="filler"></div>
+<p style="font-size:17px;font-family: 'Roboto', sans-serif; margin-top:365px; margin-left:15px;">Enable or disable ad-blocker</p>
+
+
+<input class="switch1" type="checkbox" id="toggle"/>
+
+<div class="toggle" style="margin-top:-328px;margin-left:180px;transform: scale(0.35,0.35);">
+
+  <label class="box" for="toggle"></label>
+</div>
+
+
+
+<input class="switch2" type="checkbox" id="toggle2"/>
+
+<div class="toggle2" style="margin-left:180px;transform: scale(0.35,0.35);">
+
+  <label class="box2" for="toggle2"></label>
+</div>
+
+
+
+<details class="custom-select">
+	<summary class="radios">
+		<input style=" font-family: 'Roboto', sans-serif;
+    font-weight: 200; color:white; margin-top:-15px;" type="radio" name="item" id="default" title="Select a font" checked>
+		<input style=" font-family: 'Comic Sans MS';
+    font-weight: 200; color:white" type="radio" name="item" id="item1" title="Comic Sans">
+		<input  style="font-family: 'Arial', sans-serif;
+    font-weight: 200; color:white" type="radio" name="item" id="item2" title="Arial">
+		<input style="font-family: 'Verdana', sans-serif;
+    font-weight: 200; color:white" type="radio" name="item" id="item3" title="Verdana">
+		<input style="font-family: 'Calibri';
+    font-weight: 200; color:white" type="radio" name="item" id="item4" title="Calibri">
+		<input style= "font-family: 'Tahoma', sans-serif;
+    font-weight: 100; color:white" type="radio" name="item" id="item5" title="Tahoma">
+		 <hr style="width:100%;text-align:left;margin-left:0;">
+	</summary>
+	<ul class="list">
+		<li>
+			<label style="font-family: 'Comic Sans MS';
+    font-weight: 200;" for="item1">Comic Sans</label>
+		</li>
+		<li>
+			<label style="font-family: 'Arial', sans-serif;
+    font-weight: 200;" for="item2">Arial</label>
+		</li>
+		<li>
+			<label style="font-family: 'Verdana', sans-serif;
+    font-weight: 200; color:white" for="item3">Verdana</label>
+		</li>
+		<li>
+			<label style= "font-family: 'Calibri';;
+    font-weight: 200; color:white" for="item4">Calibri</label>
+		</li>
+		<li>
+			<label style= "font-family: 'Tahoma', sans-serif;
+    font-weight: 100; color:white" for="item5">Tahoma</label>
+		</li>
+	</ul>
+
+</details>
+ 
+<center><img class="logo"src="logo.jpg" style="position:absolute;width:369.5px;height:225px;"/></center>
+ <label style="margin-top:200px; margin-left:120px;"for="colorpicker"><h3 style="font-family: 'Roboto', sans-serif;  ">Background Color Picker</h3></label>
+
+   <input class="colorvalue" style="position:absolute;margin-top:275px;margin-left:-245px; transform: scale(1.5,1.5);"type="color" id="colorpicker" value="#ffffff">
+
+    <label style="margin-top:200px; margin-left:160px;"for="colorpicker"><h3 style="font-family: 'Roboto', sans-serif;  ">Font Color Picker</h3></label>
+  <input class="colorvalue" style="position:absolute;margin-top:275px;margin-left:-210px; transform: scale(1.5,1.5);"type="color" id="colorpicker2" value="#ffffff">
+  <h3 style="position:absolute; margin-top:150px; margin-left:170px;font-family: 'Roboto', sans-serif;"> Letter Spacing </h3>
+<input  class="spacing" style="color: #FFFFFF; position:absolute;margin-top: 470px;margin-left: -230px;" min="1" max="10" type="number" id="spacing"/>
+ 
+<h3 style=" margin-top:400px; margin-left:170px;font-family: 'Roboto', sans-serif;"> Text To Speech </h3>
+  <div class="main">
+<div style="margin-top:-175px;"class="input-group mb-3">
+  <input size="20" style="margin-left:50px;background-color:#242526 !important;color:white !important;"type="text" class="form-control" id="say-input">
+  <input type="button" name="Search" value="Search" id="textbutton" class="btn btn-outline-secondary btn-primary" type="button">
+ <input type="button" name="Reset" value="Reset" class="btn btn-outline-secondary" type="button" onclick="history.go(0)">
+</div>
+</div>
+
+
+<style type="text/css">
+	
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+	
+	*,
+
+   input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+*::before,
+*::after {
+  transition: 400ms all ease-in-out 50ms;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+.main {
+display: block;
+
+margin-top: 200px;
+padding: 15px;
+height: 500px;
+width: 90%;
+
+color: white;
+font-family: 'Roboto', sans-serif;
+justify-content: left;
+align-content: left;
+
+
+}
+
+
+.btn-outline-secondary.btn-primary {
+  background-color:#242526 !important;
+  color: white;
+}
+.blog-footer {
+  padding: 2rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #333a42;
+  
+}
+.blog-footer:last-child {
+  margin-bottom: 0;
+}
+audio {
+width: inherit;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+h1 {
+ font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+
+}
+body {
+	
+    font-weight: 200;
+  
+    color:white;
+background-color:#242526;
+	height: 800px;
+  width: 500px;
+}
+
+.filler{
+color:transparent;
+	margin-top: -130px;
+}
+
+.filler2{
+
+  margin-top:50px;
+}
+
+.logo {
+position:absolute;
+	margin-top:-300px;
+	margin-left: -200px;
+}
+
+.spacing {
+  height:15px;
+ border-radius: 25px;
+  background-color: #242526;
+    border: 2px solid #FFFFFF;
+    padding: 20px; 
+
+}
+
+details {
+  font-size: 15px;
+	position: relative;
+	width: 300px;
+	margin-right: 1rem;
+	margin-top:-10px;
+}
+
+details[open] {
+
+	z-index: 1;
+
+}
+
+summary {
+	padding: 1rem;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: transparent;
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+
+	display: none;
+	
+
+}
+
+details[open] summary:before {
+
+	content: '';
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+summary:after {
+	margin-top:-55px;
+	content: '';
+	display: inline-block;
+	float: right;
+	width: .5rem;
+	height: .5rem;
+	border-bottom: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-bottom-left-radius: 2px;
+	transform: rotate(45deg) translate(50%, 0%);
+	transform-origin: center center;
+	transition: transform ease-in-out 100ms
+
+}
+
+summary:focus {
+
+	outline: none;
+}
+
+details[open] summary:after {
+
+	transform: rotate(-45deg) translate(0%, 0%);
+}
+
+ul {
+
+	width: 100%;
+background-color: #242526;
+	position: absolute;
+	top: calc(100% + .5rem);
+	left: 0;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+li {
+
+	margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid #ccc;
+}
+
+li:first-child {
+	padding-top: 0;
+}
+
+li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+/* FAKE SELECT */
+
+summary.radios {
+
+	counter-reset: radios;
+}
+
+input[type=radio] {
+	counter-increment: radios;
+	appearance: none;
+	display: none;
+}
+
+input[type=radio]:checked {
+	display: inline;
+}
+
+input[type=radio]:after {
+	content: attr(title);
+	display: inline;
+	font-size: 1rem;
+}
+
+ul.list {
+	counter-reset: labels;
+}
+
+.switch1 {
+
+  display: none;
+}
+
+
+.switch2 {
+
+  display: none;
+}
+a{ color: rgba(43,43,43,1); text-decoration: none; padding: 10px; border-bottom: 2px solid rgba(43,43,43,1); }
+
+a:hover{ background: rgba(43,43,43,1); color: rgba(255,255,255,1); }
+
+
+/*Button is :CHECKED*/
+
+.switch1:checked ~ .toggle {
+  background: rgba(73,168,68,1);
+  box-shadow: 0 0 2px rgba(73,168,68,1);
+}
+
+.switch1:checked ~ .toggle .box {
+  left: 110px;
+  transform: rotate(360deg);
+}
+
+
+/*shared*/
+
+div,
+label {
+  border-radius: 50px;
+}
+
+
+/*'un':checked state*/
+
+.toggle {
+  height: 100px;
+  width: 200px;
+  background: rgba(43, 43, 43, 1);
+  position: relative;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 100px);
+  
+  box-shadow: 0 0 2px rgba(43,43,43,1);
+  
+}
+
+.box {
+  height: 80px;
+  width: 80px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.box::before {
+  content: '';
+  height: 60px;
+  width: 5px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 2.5px);
+  transform: rotate(45deg);
+}
+
+.box::after {
+  content: '';
+  height: 5px;
+  width: 60px;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: calc(50% - 30px);
+  transform: rotate(45deg);
+}
+
+.box::before,
+.box::after{
+  background: rgba(43,43,43,1);
+  border-radius: 5px;
+}
+
+/* pesduo class on toggle */
+
+.switch1:checked ~ .toggle .box::before{
+  height: 50px;
+  top: calc(55% - 25px);
+  left: calc(60% - 2.5px);
+  background: rgba(73,168,68,1);
+}
+.switch1:checked ~ .toggle .box::after{
+  width: 20px;
+  top: calc(95% - 25px);
+  left: calc(22.5% - 2.5px);
+  background: rgba(73,168,68,1);
+}
+
+.switch1:checked ~ .toggle {
+  background: rgba(73,168,68,1);
+  box-shadow: 0 0 2px rgba(73,168,68,1);
+}
+
+.switch1:checked ~ .toggle .box {
+  left: 110px;
+  transform: rotate(360deg);
+}
+
+
+/*shared*/
+.switch2:checked ~ .toggle2 {
+  background: rgba(73,168,68,1);
+  box-shadow: 0 0 2px rgba(73,168,68,1);
+}
+
+.switch2:checked ~ .toggle2 .box2 {
+  left: 110px;
+  transform: rotate(360deg);
+}
+
+div,
+label {
+  border-radius: 50px;
+}
+
+
+/*'un':checked state*/
+
+.toggle2 {
+  height: 100px;
+  width: 200px;
+  background: rgba(43, 43, 43, 1);
+  position: relative;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 100px);
+  
+  box-shadow: 0 0 2px rgba(43,43,43,1);
+  
+}
+
+.box2 {
+  height: 80px;
+  width: 80px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.box2::before {
+  content: '';
+  height: 60px;
+  width: 5px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 2.5px);
+  transform: rotate(45deg);
+}
+
+.box2::after {
+  content: '';
+  height: 5px;
+  width: 60px;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: calc(50% - 30px);
+  transform: rotate(45deg);
+}
+
+.box2::before,
+.box2::after{
+  background: rgba(43,43,43,1);
+  border-radius: 5px;
+}
+
+/* pesduo class on toggle */
+
+.switch2:checked ~ .toggle2 .box2::before{
+  height: 50px;
+  top: calc(55% - 25px);
+  left: calc(60% - 2.5px);
+  background: rgba(73,168,68,1);
+}
+.switch2:checked ~ .toggle2 .box2::after{
+  width: 20px;
+  top: calc(95% - 25px);
+  left: calc(22.5% - 2.5px);
+  background: rgba(73,168,68,1);
+}
+
+         .btn-grad {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+
+
+
+	</style>
+
+
+  <center>
+  <div class="main">
+    <h3 style="position: absolute;margin-top:-750px;margin-left: 150px"> Dictionary </h3>
+
+<div style="margin-top:-650px;"class="input-group mb-3">
+  <input style="background-color:#242526 !important;color:white !important;"type="text" class="form-control" id="input">
+  <input type="button" name="Search" value="Search" id="check" class="btn btn-outline-secondary btn-primary" type="button">
+  <input type="button" name="Reset" value="Reset" class="btn btn-outline-secondary" type="button" onclick="history.go(0)">
+</div>
+
+<h1 class="badge rounded-pill bg-primary" id="word" align="left"></h1>
+<h4 align="left">Definition:</h4>
+<h6 align="left" id="definition1"></h6>
+<h6 align="left" id="definition2"></h6>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<h4 align="left">Example:</h4>
+<h6 align="left"  id="example1"></h6>
+<h6 align="left" id="example2"></h6>
+&nbsp;<br>
+&nbsp;<br>
+
+
+
+<audio controls id="audio">
+  <source type="audio/ogg">
+</audio>
+</div>
+</center>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=Uy0X6T10"></script>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+
+
+	<script type="text/javascript" src="popup.js"></script>
+
+</html>
